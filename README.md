@@ -1,32 +1,21 @@
 # Горизонт Событий · сайт
 
-Публичный лендинг на GitHub Pages.
+https://arduinoev3.github.io/gorizont-sobytiy/
 
-- **Сайт:** https://arduinoev3.github.io/gorizont-sobytiy/
-- **Репозиторий:** https://github.com/arduinoev3/gorizont-sobytiy
+Дизайн повторяет актуальную клиентскую презу (космический титул cyan/orange, светлые контентные блоки, Montserrat).
 
-## Источники
+## Структура
 
-Копирайт и структура собраны из клиентских колод:
+- `index.html` - лендинг
+- `privacy.html` - Политика обработки ПДн (152-ФЗ, с плейсхолдерами реквизитов)
+- `assets/horizon-bg.svg` - фон hero без дубляжа логотипа текстом
+- `assets/team/` - фото команды
 
-- компании: `gorizont-companies-pitch-current.pdf` / `product-pitch-companies-structure.md`
-- образование: `product-pitch-education-structure.md`
+## Заявка
 
-Визуал: палитра **Horizon Brass** (`skills/gorizont-pitch-design`).
-
-## Форма заявки
-
-Поля: фамилия, имя, отчество, телефон, компания / организация, ссылка для связи, задача.
-Обязательно согласие на обработку персональных данных.
-Отправка через [FormSubmit](https://formsubmit.co) на `contact@stratfield.ru` (первый submit потребует подтверждения почты).
+Сейчас CTA-кнопка (Telegram / mailto). Форму подключим отдельно.
+Согласие на ПДн: галочка + ссылка на `privacy.html` (см. политику).
 
 ## Соцсети
 
-Telegram: `@VenistorAlishi` · `@Anikaso`.
-Instagram и ВК: подставьте URL в `js/site.js` → объект `SOCIAL`.
-
-## Локально
-
-```bash
-python3 -m http.server 8765 --bind 127.0.0.1
-```
+Telegram живой. Instagram/VK - в `js/site.js` → `SOCIAL`.

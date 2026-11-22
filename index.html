@@ -3,425 +3,276 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Горизонт Событий: игровые и проектные форматы для компаний и образовательных организаций" />
+  <meta name="description" content="Горизонт Событий: игровые, образовательные и проектные форматы вокруг реальных бизнес-задач" />
   <title>Горизонт Событий</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
   <a class="skip" href="#main">К содержанию</a>
 
   <header class="hero" id="top">
-    <nav class="topnav" aria-label="Главная навигация">
-      <a class="topnav__brand" href="#top">
-        <img src="assets/logo-inverted.png" alt="" width="36" height="36" />
-        Горизонт Событий
-      </a>
+    <div class="hero__veil" aria-hidden="true"></div>
+    <nav class="topnav" aria-label="Главная">
+      <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true"></span>горизонт событий</a>
       <div class="topnav__links">
-        <a href="#audience">Для кого</a>
+        <a href="#who">Кто мы</a>
         <a href="#formats">Форматы</a>
-        <a href="#cases">Кейсы</a>
-        <a href="#contact">Заявка</a>
+        <a href="#team">Команда</a>
+        <a href="#contact">Связаться</a>
       </div>
     </nav>
 
     <div class="hero__inner">
-      <p class="hero__brand">Горизонт Событий</p>
-      <h1 class="hero__title">Игровые форматы, которые доводят задачу до решения и людей, готовых его вести</h1>
-      <p class="hero__lede">
-        Собираем симуляции, игры и проектные контуры под реальный контекст:
-        для компаний, которым нужно реализовать продукт, и для образовательных программ, которым нужна оценка и достройка компетенций
+      <h1 class="hero__brand">
+        <span class="hero__brand-row">
+          <span class="hero__sun-rise" aria-hidden="true"></span>
+          Горизонт
+          Событий
+          <span class="hero__sun-set" aria-hidden="true"></span>
+        </span>
+      </h1>
+      <p class="hero__title">
+        Игровые, образовательные и проектные форматы
+        <em>вокруг реальных бизнес-задач</em>
       </p>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="#contact">Оставить заявку</a>
-        <a class="btn btn--ghost" href="#audience">Выбрать аудиторию</a>
+        <a class="btn btn--teal" href="#contact">Оставить заявку</a>
+        <a class="btn btn--ghost" href="#formats">Смотреть форматы</a>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="section" id="who">
-      <div class="wrap reveal">
-        <p class="section__eyebrow">Кто мы</p>
-        <h2>Технологии в одном контуре от задачи до результата</h2>
-        <p class="section__lede">
-          Владеем несколькими технологическими основами и собираем из них формат под задачу
-          на стыке классического консалтинга, СМД-технологий и дизайн-мышления
-        </p>
+    <section class="section section--paper" id="who">
+      <div class="wrap who reveal">
+        <div>
+          <p class="section__kicker">Кто мы</p>
+          <h2>Мы превращаем сложную задачу в игру, <span class="accent">после которой команда знает, что делать</span></h2>
+          <div class="who__meta">
+            <div>
+              <h3>Для кого</h3>
+              <p>Крупные и средние компании, образовательные организации</p>
+            </div>
+            <div>
+              <h3>Как</h3>
+              <p>На стыке ведущих подходов: от привычных игр и программ до продукта под вашу задачу</p>
+            </div>
+          </div>
+        </div>
+        <div class="who__photo">
+          <img src="assets/who-workshop.jpg" alt="Команда за работой над задачей" width="720" height="900" />
+        </div>
       </div>
     </section>
 
     <section class="section section--mist" id="audience">
-      <div class="wrap">
-        <div class="reveal">
-          <p class="section__eyebrow">Две аудитории</p>
-          <h2>Один бренд, две сборки</h2>
-          <p class="section__lede">Выберите, как смотреть портфель: через реализацию продукта в компании или через оценку и достройку обучения</p>
+      <div class="wrap reveal">
+        <p class="section__kicker">Две сборки</p>
+        <h2>Компании и образование</h2>
+        <div class="tabs" role="tablist" aria-label="Аудитория" data-tabs>
+          <button type="button" role="tab" id="tab-biz" aria-controls="panel-biz" aria-selected="true">Компаниям</button>
+          <button type="button" role="tab" id="tab-edu" aria-controls="panel-edu" aria-selected="false">Образованию</button>
         </div>
-
-        <div class="audience reveal" data-audience>
-          <div class="audience__tabs" role="tablist" aria-label="Аудитория">
-            <button class="audience__tab" type="button" role="tab" id="tab-biz" aria-controls="panel-biz" aria-selected="true">Компаниям</button>
-            <button class="audience__tab" type="button" role="tab" id="tab-edu" aria-controls="panel-edu" aria-selected="false">Образованию</button>
-          </div>
-
-          <div class="audience__panel" id="panel-biz" role="tabpanel" aria-labelledby="tab-biz">
-            <p class="section__lede" style="margin-top:1.5rem">
-              Разрабатываем и проводим игровые и проектные форматы для реализации продуктов и сложных задач в средних и крупных компаниях
-            </p>
-            <ul class="situations">
-              <li>
-                <strong>Стратегическая развилка</strong>
-                <span>Основания для выбора сценария и следующий шаг команды</span>
-              </li>
-              <li>
-                <strong>Новый продукт или направление</strong>
-                <span>Проработанные варианты выхода на рынок</span>
-              </li>
-              <li>
-                <strong>Организационные изменения</strong>
-                <span>Решение и вовлечение тех, кто будет его реализовывать</span>
-              </li>
-              <li>
-                <strong>Задача, которая давно не двигается</strong>
-                <span>Новые способы мышления и действия</span>
-              </li>
-            </ul>
-            <p class="note">Для кого: собственники и CEO · руководители направлений · стратегия / продукт / инновации · HR/L&amp;D</p>
-          </div>
-
-          <div class="audience__panel" id="panel-edu" role="tabpanel" aria-labelledby="tab-edu" hidden>
-            <p class="section__lede" style="margin-top:1.5rem">
-              Разрабатываем и проводим игровые и образовательные форматы для оценки компетенций и достройки управленческого обучения
-            </p>
-            <ul class="situations">
-              <li>
-                <strong>Нужно увидеть реальный уровень участников</strong>
-                <span>Оценка компетенций в действии, не только по анкете</span>
-              </li>
-              <li>
-                <strong>Теория есть, поведения нет</strong>
-                <span>Достройка обучения до управленческого действия</span>
-              </li>
-              <li>
-                <strong>Проекты слабо доходят до гранта или инвесткомитета</strong>
-                <span>Выше качество проработки и pass rate</span>
-              </li>
-              <li>
-                <strong>Нужен пилот перед полной программой</strong>
-                <span>Короткая симуляция с данными для доработки</span>
-              </li>
-            </ul>
-            <p class="note">Для кого: руководители программ · грантовые офисы · акселераторы · методисты · директора по развитию</p>
-          </div>
+        <div class="panel" id="panel-biz" role="tabpanel" aria-labelledby="tab-biz">
+          <p class="section__lede">Игровые и проектные форматы для реализации продуктов и сложных задач в средних и крупных компаниях</p>
+          <ul class="situations">
+            <li><strong>Стратегическая развилка</strong><span>Основания для выбора сценария и следующий шаг команды</span></li>
+            <li><strong>Новый продукт или направление</strong><span>Проработанные варианты выхода на рынок</span></li>
+            <li><strong>Организационные изменения</strong><span>Решение и вовлечение тех, кто будет его реализовывать</span></li>
+            <li><strong>Задача, которая давно не двигается</strong><span>Новые способы мышления и действия</span></li>
+          </ul>
+        </div>
+        <div class="panel" id="panel-edu" role="tabpanel" aria-labelledby="tab-edu" hidden>
+          <p class="section__lede">Игровые и образовательные форматы для оценки компетенций и достройки управленческого обучения</p>
+          <ul class="situations">
+            <li><strong>Нужно увидеть реальный уровень участников</strong><span>Оценка компетенций в действии, не только по анкете</span></li>
+            <li><strong>Теория есть, поведения нет</strong><span>Достройка обучения до управленческого действия</span></li>
+            <li><strong>Проекты слабо доходят до гранта или инвесткомитета</strong><span>Выше качество проработки и pass rate</span></li>
+            <li><strong>Нужен пилот перед полной программой</strong><span>Короткая симуляция с данными для доработки</span></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section" id="formats">
-      <div class="wrap">
-        <div class="reveal">
-          <p class="section__eyebrow">Форматы</p>
-          <h2>Карта продуктов</h2>
-          <p class="section__lede">Готовы провести готовый формат или собрать связку под задачу. Ориентир · финальная смета после диагностики</p>
+    <section class="section section--paper" id="formats">
+      <div class="wrap reveal">
+        <p class="section__kicker">Форматы</p>
+        <h2>Четыре формата под любой масштаб задачи</h2>
+        <p class="section__lede">Готовы провести каждый из них или разработать под вашу задачу. Ориентир · финальная смета после диагностики</p>
+        <div class="tabs" role="tablist" aria-label="Форматы" data-tabs>
+          <button type="button" role="tab" id="ftab-biz" aria-controls="fpanel-biz" aria-selected="true">Компаниям</button>
+          <button type="button" role="tab" id="ftab-edu" aria-controls="fpanel-edu" aria-selected="false">Образованию</button>
         </div>
-
-        <div class="audience reveal" data-audience-formats>
-          <div class="audience__tabs" role="tablist" aria-label="Форматы по аудитории">
-            <button class="audience__tab" type="button" role="tab" id="ftab-biz" aria-controls="fpanel-biz" aria-selected="true">Компаниям</button>
-            <button class="audience__tab" type="button" role="tab" id="ftab-edu" aria-controls="fpanel-edu" aria-selected="false">Образованию</button>
+        <div class="panel" id="fpanel-biz" role="tabpanel" aria-labelledby="ftab-biz">
+          <div class="products">
+            <article class="product"><h3>Классическая стратсессия</h3><p class="product__price">от 150 000 ₽</p><p>Выровнять приоритеты и договориться о следующем ходе</p></article>
+            <article class="product"><h3>Симуляции</h3><p class="product__price">2 500 ₽ / участник</p><p>Прожить неопределённость до запуска и увидеть, кто ведёт команду</p></article>
+            <article class="product"><h3>Бизнес-игры</h3><p class="product__price">от 150 000 ₽</p><p>Команда компании разрабатывает решение по вашей задаче</p></article>
+            <article class="product"><h3>Форсайт-игры</h3><p class="product__price">от 250 000 ₽</p><p>Карта путей рынка или продукта: сценарии, гипотезы, прототипы</p></article>
+            <article class="product"><h3>Проектный контур внедрения</h3><p class="product__price">от 500 000 ₽ · от 2 дней</p><p>От сессии до маршрута внедрения и ответственных</p></article>
+            <article class="product"><h3>Контур Хода</h3><p class="product__price">смета</p><p>Авторский формат: сотрудники, студенты и эксперты решают реальную задачу бизнеса</p></article>
           </div>
-
-          <div class="audience__panel" id="fpanel-biz" role="tabpanel" aria-labelledby="ftab-biz">
-            <div class="products" style="margin-top:1.25rem">
-              <article class="product">
-                <h3>Классическая стратсессия</h3>
-                <p class="product__price">от 150 000 ₽</p>
-                <p>Выровнять приоритеты и договориться о следующем ходе на вашем контексте</p>
-              </article>
-              <article class="product">
-                <h3>Симуляции</h3>
-                <p class="product__price">2 500 ₽ / участник</p>
-                <p>Прожить неопределённость до запуска и увидеть, кто ведёт команду</p>
-              </article>
-              <article class="product">
-                <h3>Бизнес-игры</h3>
-                <p class="product__price">от 150 000 ₽</p>
-                <p>Команда компании разрабатывает решение по вашему продукту или задаче</p>
-              </article>
-              <article class="product">
-                <h3>Форсайт-игры</h3>
-                <p class="product__price">от 250 000 ₽</p>
-                <p>Карта путей рынка или продукта: сценарии, гипотезы, прототипы</p>
-              </article>
-              <article class="product">
-                <h3>Проектный контур внедрения</h3>
-                <p class="product__price">от 500 000 ₽ · от 2 дней</p>
-                <p>От сессии до маршрута внедрения, ответственных и ближайших шагов</p>
-              </article>
-              <article class="product">
-                <h3>Кастом · Контур Хода</h3>
-                <p class="product__price">смета</p>
-                <p>Авторский формат и индивидуальные сборки под сложную задачу</p>
-              </article>
-            </div>
-          </div>
-
-          <div class="audience__panel" id="fpanel-edu" role="tabpanel" aria-labelledby="ftab-edu" hidden>
-            <div class="products" style="margin-top:1.25rem">
-              <article class="product">
-                <h3>Симуляции для оценки</h3>
-                <p class="product__price">2 500 ₽ / участник</p>
-                <p>Коротко проявить лидерские и управленческие качества в неопределённости</p>
-              </article>
-              <article class="product">
-                <h3>Игры и кейс-чемпионаты</h3>
-                <p class="product__price">от 150 000 ₽</p>
-                <p>Оценить и потренировать компетенции на кейсе или задаче программы</p>
-              </article>
-              <article class="product">
-                <h3>Образовательные и акселерационные модули</h3>
-                <p class="product__price">от 500 000 ₽ · от 2 дней</p>
-                <p>Достроить обучение: игры, лекции и практика на проектах участников</p>
-              </article>
-              <article class="product">
-                <h3>Форсайт (опция)</h3>
-                <p class="product__price">от 250 000 ₽</p>
-                <p>Когда программе нужен взгляд в будущее направления или рынка выпускников</p>
-              </article>
-            </div>
+        </div>
+        <div class="panel" id="fpanel-edu" role="tabpanel" aria-labelledby="ftab-edu" hidden>
+          <div class="products">
+            <article class="product"><h3>Симуляции для оценки</h3><p class="product__price">2 500 ₽ / участник</p><p>Проявить лидерские и управленческие качества в неопределённости</p></article>
+            <article class="product"><h3>Игры и кейс-чемпионаты</h3><p class="product__price">от 150 000 ₽</p><p>Оценить и потренировать компетенции на кейсе программы</p></article>
+            <article class="product"><h3>Образовательные и акселерационные модули</h3><p class="product__price">от 500 000 ₽ · от 2 дней</p><p>Достроить обучение: игры, лекции и практика на проектах участников</p></article>
+            <article class="product"><h3>Форсайт (опция)</h3><p class="product__price">от 250 000 ₽</p><p>Когда программе нужен взгляд в будущее направления</p></article>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section section--mist" id="method">
-      <div class="wrap">
-        <div class="reveal">
-          <p class="section__eyebrow">Методология</p>
-          <h2>Пять технологий, один контур</h2>
-          <p class="section__lede">Фундамент сборки, не меню SKU</p>
-        </div>
-        <div class="tech reveal">
-          <article class="tech__item">
-            <span class="tech__n">T1</span>
-            <h3>СМД-технологии</h3>
-            <p>Разбор проблемы, образ решения, подготовка команды</p>
-          </article>
-          <article class="tech__item">
-            <span class="tech__n">T2</span>
-            <h3>MBA-дисциплины</h3>
-            <p>Управленческие инструменты, чтобы решение доехало до внедрения</p>
-          </article>
-          <article class="tech__item">
-            <span class="tech__n">T3</span>
-            <h3>Бизнес-игры</h3>
-            <p>Тренировка, оценка, моделирование задачи</p>
-          </article>
-          <article class="tech__item">
-            <span class="tech__n">T4</span>
-            <h3>Дизайн-мышление</h3>
-            <p>Взгляд клиента, прототипы, быстрые циклы проверки</p>
-          </article>
-          <article class="tech__item">
-            <span class="tech__n">T5</span>
-            <h3>ИИ и цифровизация</h3>
-            <p>Оцифровка процессов и результатов формата</p>
-          </article>
+      <div class="wrap reveal">
+        <p class="section__kicker">Методология</p>
+        <h2>Пять технологий, <span class="accent">один контур</span></h2>
+        <div class="tech">
+          <article class="tech__item"><span class="tech__n">T1</span><h3>СМД</h3><p>Разбор проблемы, образ решения, подготовка команды</p></article>
+          <article class="tech__item"><span class="tech__n">T2</span><h3>MBA</h3><p>Управленческие инструменты до внедрения</p></article>
+          <article class="tech__item"><span class="tech__n">T3</span><h3>Игровые технологии</h3><p>Тренировка, оценка, моделирование задачи</p></article>
+          <article class="tech__item"><span class="tech__n">T4</span><h3>Дизайн-мышление</h3><p>Взгляд клиента, прототипы, быстрые циклы</p></article>
+          <article class="tech__item"><span class="tech__n">T5</span><h3>ИИ и цифровизация</h3><p>Оцифровка процессов и результатов формата</p></article>
         </div>
       </div>
     </section>
 
     <section class="section section--ink" id="process">
-      <div class="wrap">
-        <div class="reveal">
-          <p class="section__eyebrow">Как работаем</p>
-          <h2>От анализа до следующего хода</h2>
-          <p class="section__lede">Игра строится на вашем реальном контексте. Решения формулируют сами участники</p>
-        </div>
-        <ol class="steps reveal">
-          <li>
-            <span class="steps__n">1</span>
-            <h3>Анализ</h3>
-            <p>Ситуация компании или программы, цели и ограничения</p>
-          </li>
-          <li>
-            <span class="steps__n">2</span>
-            <h3>Постановка</h3>
-            <p>Фокус задачи, критерии результата, состав участников</p>
-          </li>
-          <li>
-            <span class="steps__n">3</span>
-            <h3>Дизайн</h3>
-            <p>Сборка формата и технологического контура</p>
-          </li>
-          <li>
-            <span class="steps__n">4</span>
-            <h3>Проведение</h3>
-            <p>Работа над задачей, проверка решений, фиксация плана</p>
-          </li>
-          <li>
-            <span class="steps__n">5</span>
-            <h3>Сопровождение</h3>
-            <p>Обратная связь, внедрение или рекомендации в curriculum</p>
-          </li>
+      <div class="wrap reveal">
+        <p class="section__kicker">Как работаем</p>
+        <h2>От анализа до следующего хода</h2>
+        <ol class="steps">
+          <li><span class="steps__n">1</span><h3>Анализ</h3><p>Ситуация, цели, ограничения</p></li>
+          <li><span class="steps__n">2</span><h3>Постановка</h3><p>Фокус задачи и критерии результата</p></li>
+          <li><span class="steps__n">3</span><h3>Дизайн</h3><p>Сборка формата и технологий</p></li>
+          <li><span class="steps__n">4</span><h3>Проведение</h3><p>Работа над задачей и план</p></li>
+          <li><span class="steps__n">5</span><h3>Сопровождение</h3><p>Внедрение или рекомендации в curriculum</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="section" id="cases">
-      <div class="wrap">
-        <div class="reveal">
-          <p class="section__eyebrow">Кейсы</p>
-          <h2>Что уже сдвинули</h2>
-        </div>
-        <div class="cases reveal">
+    <section class="section section--mist" id="cases">
+      <div class="wrap reveal">
+        <p class="section__kicker">Кейсы</p>
+        <h2>Что уже сдвинули</h2>
+        <div class="cases">
           <article class="case">
             <p class="case__metric">100 млн ₽</p>
             <p class="case__who">Winny AI · EdTech</p>
-            <p>Форсайт-игра по трём стратегическим развилкам: решения, план и команды для реализации. Компания привлекла капитал на стратегическое развитие после игры</p>
+            <p>Форсайт-игра по трём стратегическим развилкам: решения, план и команды. Компания привлекла капитал на стратегическое развитие после игры</p>
           </article>
           <article class="case">
             <p class="case__metric">80 из 100</p>
             <p class="case__who">Развитие экосистемы сообщества</p>
-            <p>Программа компетенций на реальных инициативах. Инвесткомитет профинансировал проекты после потоков программы</p>
+            <p>Программа компетенций на реальных инициативах. Инвесткомитет профинансировал проекты после потоков</p>
           </article>
           <article class="case">
             <p class="case__metric">5 млн ₽</p>
             <p class="case__who">Грантовый офис МФТИ</p>
-            <p>Пилотная симуляция грантового конкурса выросла в образовательную программу. Цифра, бюджет финансирования проектов программы</p>
+            <p>Пилотная симуляция грантового конкурса выросла в образовательную программу</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--mist" id="team">
-      <div class="wrap">
-        <div class="reveal">
-          <p class="section__eyebrow">Команда</p>
-          <h2>Люди, которые собирают формат</h2>
-        </div>
-        <div class="team reveal">
-          <article>
-            <p class="team__role">Стратегия, R&amp;D</p>
-            <h3>Игорь Воробьев</h3>
-            <p>Игротехник МШУ «Сколково», методология и R&amp;D</p>
+    <section class="section section--paper" id="team">
+      <div class="wrap reveal">
+        <p class="section__kicker">Люди</p>
+        <h2>Команда</h2>
+        <div class="team">
+          <article class="person person--ink">
+            <img class="person__photo" src="assets/team/igor.png" alt="Игорь Воробьев" width="144" height="144" />
+            <div>
+              <h3 class="person__name">Игорь Воробьев</h3>
+              <p class="person__role">Стратегия, R&amp;D</p>
+            </div>
+            <p class="person__bio">Игротехник МШУ «Сколково», 4 курс МФТИ-Сколково, организатор грантовых конкурсов и программ МФТИ</p>
           </article>
-          <article>
-            <p class="team__role">Операции, продажи</p>
-            <h3>Кирилл Козлов</h3>
-            <p>Консалтинг и анализ рынка для среднего бизнеса</p>
+          <article class="person">
+            <img class="person__photo" src="assets/team/marina.png" alt="Марина Горлова" width="144" height="144" />
+            <div>
+              <h3 class="person__name">Марина Горлова</h3>
+              <p class="person__role">Человеческое развитие</p>
+            </div>
+            <p class="person__bio">Вовлечение студентов и школьников, работа с грантами, разработка образовательных программ</p>
           </article>
-          <article>
-            <p class="team__role">Дизайн, коммуникации</p>
-            <h3>Софья Аникина</h3>
-            <p>Маркетинг, партнёрства, коммуникации</p>
+          <article class="person">
+            <img class="person__photo" src="assets/team/polina.png" alt="Полина Бубнова" width="144" height="144" />
+            <div>
+              <h3 class="person__name">Полина Бубнова</h3>
+              <p class="person__role">Игротехник</p>
+            </div>
+            <p class="person__bio">Образовательные продукты и разработка игр, модератор Школы игротехников МШУ «Сколково»</p>
           </article>
-          <article>
-            <p class="team__role">Человеческое развитие</p>
-            <h3>Марина Горлова</h3>
-            <p>Вовлечение внешних участников, гранты, программы</p>
+          <article class="person">
+            <img class="person__photo" src="assets/team/kirill.png" alt="Кирилл Козлов" width="144" height="144" />
+            <div>
+              <h3 class="person__name">Кирилл Козлов</h3>
+              <p class="person__role">HR и продажи</p>
+            </div>
+            <p class="person__bio">Кадровые HR-проекты, консалтинг и анализ рынка для среднего бизнеса, проектные продажи и переговоры</p>
           </article>
-          <article>
-            <p class="team__role">Игротехнолог</p>
-            <h3>Полина Бубнова</h3>
-            <p>Образовательные продукты и разработка игр</p>
+          <article class="person">
+            <img class="person__photo" src="assets/team/sofia.png" alt="Софья Аникина" width="144" height="144" />
+            <div>
+              <h3 class="person__name">Софья Аникина</h3>
+              <p class="person__role">Дизайн, коммуникации</p>
+            </div>
+            <p class="person__bio">Основатель проекта «Мам, я буду финалистом Большой перемены», маркетинг для среднего бизнеса, партнёрства</p>
           </article>
-          <article>
-            <p class="team__role">Эксперт-партнёр</p>
-            <h3>Елена Колмакова</h3>
-            <p>15+ лет в венчуре, опыт C-level</p>
+          <article class="person person--teal">
+            <img class="person__photo" src="assets/team/elena.png" alt="Елена Колмакова" width="144" height="144" />
+            <div>
+              <h3 class="person__name">Елена Колмакова</h3>
+              <p class="person__role">Эксперт-партнёр</p>
+            </div>
+            <p class="person__bio">15+ лет в венчуре, опыт C-level, ex-CFO международного фонда Cats.vc</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section section--ink" id="contact">
-      <div class="wrap contact">
-        <div class="contact__aside reveal">
-          <p class="section__eyebrow">Обратная связь</p>
+      <div class="wrap cta reveal">
+        <div>
+          <p class="section__kicker">Обратная связь</p>
           <h2>Опишите задачу в двух предложениях</h2>
-          <p class="section__lede">
-            Подберём сборку технологий и формат. Или созвонимся на полчаса-час: познакомимся и найдём точки роста
-          </p>
+          <p class="section__lede">Мы подберём сборку технологий и формат. Или созвонимся на полчаса-час: познакомимся и найдём точки роста</p>
           <div class="socials" aria-label="Соцсети">
             <a class="social" href="https://t.me/VenistorAlishi" target="_blank" rel="noopener noreferrer">Telegram</a>
-            <a class="social" data-social="instagram" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a class="social" data-social="vk" href="#" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+            <a class="social" data-social="instagram" href="#" >Instagram</a>
+            <a class="social" data-social="vk" href="#">ВКонтакте</a>
           </div>
-          <ul class="contacts-list">
+          <ul class="contacts">
             <li>Кирилл Козлов · <a href="tel:+79651891725">+7 965 189-17-25</a> · <a href="https://t.me/VenistorAlishi" target="_blank" rel="noopener noreferrer">@VenistorAlishi</a></li>
             <li>Софья Аникина · <a href="tel:+79519132788">+7 951 913-27-88</a> · <a href="https://t.me/Anikaso" target="_blank" rel="noopener noreferrer">@Anikaso</a></li>
             <li>Почта · <a href="mailto:contact@stratfield.ru">contact@stratfield.ru</a></li>
           </ul>
         </div>
-
-        <form class="form reveal" id="lead-form" action="https://formsubmit.co/contact@stratfield.ru" method="POST" novalidate>
-          <input type="hidden" name="_subject" value="Заявка с сайта Горизонт Событий" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://arduinoev3.github.io/gorizont-sobytiy/#contact" />
-          <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
-
-          <div class="form__grid">
-            <div class="field">
-              <label for="last_name">Фамилия</label>
-              <input id="last_name" name="last_name" type="text" autocomplete="family-name" required />
-            </div>
-            <div class="field">
-              <label for="first_name">Имя</label>
-              <input id="first_name" name="first_name" type="text" autocomplete="given-name" required />
-            </div>
-            <div class="field">
-              <label for="middle_name">Отчество</label>
-              <input id="middle_name" name="middle_name" type="text" autocomplete="additional-name" />
-            </div>
-            <div class="field">
-              <label for="phone">Телефон</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
-            </div>
-            <div class="field field--full">
-              <label for="company">Компания / организация</label>
-              <input id="company" name="company" type="text" autocomplete="organization" required />
-            </div>
-            <div class="field field--full">
-              <label for="contact_link">Ссылка для связи</label>
-              <input id="contact_link" name="contact_link" type="url" placeholder="Telegram, сайт или другой удобный канал" />
-            </div>
-            <div class="field field--full">
-              <label for="message">Задача</label>
-              <textarea id="message" name="message" placeholder="Два предложения о задаче или продукте"></textarea>
-            </div>
+        <div class="cta__box">
+          <p>Форма заявки появится здесь. Пока можно написать в Telegram или оставить контакты письмом</p>
+          <div class="cta__actions">
+            <a class="btn btn--teal" id="lead-button" href="https://t.me/VenistorAlishi" target="_blank" rel="noopener noreferrer">Оставить заявку</a>
+            <a class="btn btn--ghost" href="mailto:contact@stratfield.ru?subject=Заявка%20Горизонт%20Событий">Написать на почту</a>
           </div>
-
-          <label class="consent">
-            <input id="pd_consent" name="pd_consent" type="checkbox" value="yes" required />
-            <span>
-              Даю согласие на обработку персональных данных для связи по заявке на консультацию.
-              Данные не передаются третьим лицам вне целей ответа на обращение
-            </span>
-          </label>
-
-          <div class="form__actions">
-            <button class="btn btn--primary" type="submit">Отправить заявку</button>
-            <a class="btn btn--ghost" href="https://t.me/VenistorAlishi" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
-          </div>
-          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-          <p class="privacy">
-            Отправляя форму, вы подтверждаете согласие на обработку указанных данных оператором заявки (Горизонт Событий)
-            для обратной связи по консультации
+          <p class="legal-note">
+            Перед отправкой персональных данных ознакомьтесь с
+            <a href="privacy.html">Политикой обработки персональных данных</a>
+            и дайте согласие отдельной галочкой в форме (когда форма будет подключена)
           </p>
-        </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap">
-      <span>Горизонт Событий</span>
-      <span>Игровые форматы для компаний и образования</span>
+      <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true"></span>горизонт событий</a>
+      <a href="privacy.html">Персональные данные</a>
     </div>
   </footer>
 
