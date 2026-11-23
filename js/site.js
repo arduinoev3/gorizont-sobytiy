@@ -19,25 +19,6 @@
     });
   });
 
-  const heroVideo = document.getElementById("hero-video");
-  if (heroVideo) {
-    const holdBrand = () => {
-      try {
-        heroVideo.pause();
-        // кадр с полным титром, до финального fade
-        if (heroVideo.duration && !Number.isNaN(heroVideo.duration)) {
-          heroVideo.currentTime = Math.min(5.6, Math.max(0, heroVideo.duration - 3.2));
-        }
-      } catch (_) {
-        /* ignore seek errors on some mobile browsers */
-      }
-    };
-    heroVideo.addEventListener("ended", holdBrand);
-    heroVideo.addEventListener("error", () => {
-      heroVideo.style.display = "none";
-    });
-  }
-
   document.querySelectorAll("[data-tabs]").forEach((root) => {
     const tabs = [...root.querySelectorAll('[role="tab"]')];
     const panels = tabs
