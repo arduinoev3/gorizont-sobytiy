@@ -48,45 +48,24 @@ a { color: inherit; }
   margin-inline: auto;
 }
 
-/* Logo mark */
+/* Logo */
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
   text-decoration: none;
   color: inherit;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: lowercase;
-  font-size: 0.95rem;
 }
-.logo__mark {
-  position: relative;
-  width: 34px;
-  height: 18px;
-  flex: 0 0 auto;
+.logo__img {
+  display: block;
+  width: auto;
+  height: 40px;
+  object-fit: contain;
 }
-.logo__mark::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 2px;
-  width: 22px;
-  height: 11px;
-  border: 2.5px solid var(--teal);
-  border-bottom: 0;
-  border-radius: 14px 14px 0 0;
+.topnav .logo__img {
+  height: 44px;
 }
-.logo__mark::after {
-  content: "";
-  position: absolute;
-  right: 2px;
-  bottom: 0;
-  width: 10px;
-  height: 10px;
-  border: 2.5px solid var(--orange);
-  border-radius: 50%;
-  background: transparent;
+.footer .logo__img {
+  height: 36px;
 }
 
 /* Nav */
@@ -102,8 +81,6 @@ a { color: inherit; }
   margin: 1.15rem auto 0;
   color: #fff;
 }
-.topnav .logo__mark::before { border-color: #2ee6ff; }
-.topnav .logo__mark::after { border-color: #ff8a3d; }
 .topnav__links {
   display: flex;
   flex-wrap: wrap;
