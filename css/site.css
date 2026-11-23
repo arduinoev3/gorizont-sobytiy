@@ -510,9 +510,8 @@ a { color: inherit; }
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   border: 2.5px solid var(--teal);
-  filter: grayscale(1);
-  background: #d7 rec;
   background: #d7dde3;
 }
 .person--teal .person__photo { border-color: #fff; }
