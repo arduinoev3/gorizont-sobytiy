@@ -1,24 +1,4 @@
 (() => {
-  const SOCIAL = {
-    instagram: "",
-    vk: "",
-  };
-
-  document.querySelectorAll("[data-social]").forEach((el) => {
-    const key = el.getAttribute("data-social");
-    const url = SOCIAL[key];
-    if (url) {
-      el.href = url;
-      el.target = "_blank";
-      el.rel = "noopener noreferrer";
-      return;
-    }
-    el.addEventListener("click", (e) => {
-      e.preventDefault();
-      alert("Ссылку на " + (key === "vk" ? "ВК" : "Instagram") + " добавим после выбора хэндла. Напишите в Telegram");
-    });
-  });
-
   document.querySelectorAll("[data-tabs]").forEach((root) => {
     const tabs = [...root.querySelectorAll('[role="tab"]')];
     const panels = tabs
