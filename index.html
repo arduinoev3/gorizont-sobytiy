@@ -14,7 +14,6 @@
   <a class="skip" href="#main">К содержанию</a>
 
   <header class="hero" id="top">
-    <div class="hero__veil" aria-hidden="true"></div>
     <nav class="topnav" aria-label="Главная">
       <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true"></span>горизонт событий</a>
       <div class="topnav__links">
@@ -26,18 +25,20 @@
     </nav>
 
     <div class="hero__inner">
-      <h1 class="hero__brand">
-        <span class="hero__brand-row">
-          <span class="hero__sun-rise" aria-hidden="true"></span>
-          Горизонт
-          Событий
-          <span class="hero__sun-set" aria-hidden="true"></span>
-        </span>
-      </h1>
-      <p class="hero__title">
-        Игровые, образовательные и проектные форматы
-        <em>вокруг реальных бизнес-задач</em>
-      </p>
+      <h1 class="visually-hidden">Горизонт Событий — образовательные и игровые программы</h1>
+      <div class="hero__stage">
+        <video
+          class="hero__video"
+          id="hero-video"
+          poster="assets/brand-poster.png"
+          autoplay
+          muted
+          playsinline
+          preload="metadata"
+        >
+          <source src="assets/gorizont-sobytiy-1080.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div class="hero__cta">
         <a class="btn btn--teal" href="#contact">Оставить заявку</a>
         <a class="btn btn--ghost" href="#formats">Смотреть форматы</a>
