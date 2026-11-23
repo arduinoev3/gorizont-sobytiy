@@ -137,13 +137,18 @@ a { color: inherit; }
   align-items: end;
   overflow: hidden;
   color: #fff;
-  background: #05070a url("../assets/brand-poster.png") center / cover no-repeat;
+  background-color: #05070a;
+  background-image: url("../assets/brand-poster.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-rendering: auto;
 }
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(5, 7, 10, 0.2) 0%, rgba(5, 7, 10, 0.05) 45%, rgba(5, 7, 10, 0.55) 100%);
+  background: linear-gradient(180deg, rgba(5, 7, 10, 0.12) 0%, rgba(5, 7, 10, 0.02) 42%, rgba(5, 7, 10, 0.48) 100%);
   pointer-events: none;
 }
 .hero__inner {
@@ -465,13 +470,14 @@ a { color: inherit; }
   color: #fff;
 }
 .person__photo {
-  width: 72px;
-  height: 72px;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   border: 2.5px solid var(--teal);
   background: #d7dde3;
+  filter: none;
 }
 .person--teal .person__photo { border-color: #fff; }
 .person--ink .person__photo { border-color: var(--teal); }
