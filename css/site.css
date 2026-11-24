@@ -58,14 +58,16 @@ a { color: inherit; }
 .logo__img {
   display: block;
   width: auto;
-  height: 40px;
+  height: 42px;
   object-fit: contain;
 }
 .topnav .logo__img {
-  height: 44px;
+  height: 48px;
+  /* светлый лого на тёмном hero; чёрный не использовать здесь */
+  filter: none;
 }
 .footer .logo__img {
-  height: 36px;
+  height: 38px;
 }
 
 /* Nav */
@@ -114,18 +116,24 @@ a { color: inherit; }
   align-items: end;
   overflow: hidden;
   color: #fff;
-  background-color: #05070a;
+  background-color: #0a1628;
   background-image: url("../assets/brand-poster.webp");
-  background-position: center center;
+  background-position: center 42%;
   background-size: cover;
   background-repeat: no-repeat;
-  image-rendering: auto;
 }
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(5, 7, 10, 0.12) 0%, rgba(5, 7, 10, 0.02) 42%, rgba(5, 7, 10, 0.48) 100%);
+  /* лёгкая читаемость кнопок снизу, без чёрной пелены сверху */
+  background: linear-gradient(
+    180deg,
+    rgba(8, 18, 36, 0.18) 0%,
+    rgba(8, 18, 36, 0) 28%,
+    rgba(8, 18, 36, 0.08) 62%,
+    rgba(8, 18, 36, 0.42) 100%
+  );
   pointer-events: none;
 }
 .hero__inner {
