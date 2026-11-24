@@ -48,26 +48,45 @@ a { color: inherit; }
   margin-inline: auto;
 }
 
-/* Logo */
+/* Logo mark */
 .logo {
   display: inline-flex;
   align-items: center;
+  gap: 0.65rem;
   text-decoration: none;
   color: inherit;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  font-size: 0.95rem;
 }
-.logo__img {
-  display: block;
-  width: auto;
-  height: 42px;
-  object-fit: contain;
+.logo__mark {
+  position: relative;
+  width: 34px;
+  height: 18px;
+  flex: 0 0 auto;
 }
-.topnav .logo__img {
-  height: 48px;
-  /* светлый лого на тёмном hero; чёрный не использовать здесь */
-  filter: none;
+.logo__mark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 22px;
+  height: 11px;
+  border: 2.5px solid var(--teal);
+  border-bottom: 0;
+  border-radius: 14px 14px 0 0;
 }
-.footer .logo__img {
-  height: 38px;
+.logo__mark::after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border: 2.5px solid var(--orange);
+  border-radius: 50%;
+  background: transparent;
 }
 
 /* Nav */
@@ -83,6 +102,8 @@ a { color: inherit; }
   margin: 1.15rem auto 0;
   color: #fff;
 }
+.topnav .logo__mark::before { border-color: #2ee6ff; }
+.topnav .logo__mark::after { border-color: #ff8a3d; }
 .topnav__links {
   display: flex;
   flex-wrap: wrap;
@@ -116,9 +137,9 @@ a { color: inherit; }
   align-items: end;
   overflow: hidden;
   color: #fff;
-  background-color: #0a1628;
+  background-color: #05070a;
   background-image: url("../assets/brand-poster.webp");
-  background-position: center 42%;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -126,16 +147,10 @@ a { color: inherit; }
   content: "";
   position: absolute;
   inset: 0;
-  /* лёгкая читаемость кнопок снизу, без чёрной пелены сверху */
-  background: linear-gradient(
-    180deg,
-    rgba(8, 18, 36, 0.18) 0%,
-    rgba(8, 18, 36, 0) 28%,
-    rgba(8, 18, 36, 0.08) 62%,
-    rgba(8, 18, 36, 0.42) 100%
-  );
+  background: linear-gradient(180deg, rgba(5, 7, 10, 0.1) 0%, rgba(5, 7, 10, 0.02) 40%, rgba(5, 7, 10, 0.4) 100%);
   pointer-events: none;
 }
+
 .hero__inner {
   position: relative;
   z-index: 1;
